@@ -5,6 +5,7 @@ import {
 } from "react-router";
 import Root from '../Pages/Root/Root';
 import Errorpage from '../Pages/Errorpage/Errorpage';
+import Home from '../Pages/Home/Home';
 
 export const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ export const router = createBrowserRouter([
     children:[{
         index: true,
         path: "/",
-        Component: 
+        Component: Home
 
     },
 ]

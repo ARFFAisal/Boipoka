@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Navbar = () => {
-    const link = {
-        
-    }
+    const link = <>
+        <li className='m-2'>Home</li>
+        <li className='m-2'>about</li>
+
+    </>
     return (
         <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
@@ -14,14 +16,14 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        
+        {link}
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">daisyUI</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      
+      {link}
     </ul>
   </div>
   <div className="navbar-end">
