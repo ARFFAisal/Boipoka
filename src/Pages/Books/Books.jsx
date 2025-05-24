@@ -1,12 +1,17 @@
+import { Suspense } from "react";
+import Book from "../Book/Book";
 
 
-const Books = () => {
+const Books = ({data}) => {
     
 
    
     return (
         <div>
-            <h1>Hello I am Books</h1>
+            <h1 className="text-3xl text-center p-6"> Books</h1>
+            <Suspense fallback={<span>loading.....</span>}>
+            <Book data={data} ></Book>
+            </Suspense>
         </div>
     );
 };
